@@ -15,7 +15,32 @@ const Contact = ({ data }) => {
             <div>{company}</div>
             <div>{'C/O ${name}'}</div>
             <div>{address}</div>
-            <div style={{ maxWidth: }}
+            <div style={{ maxWidth: '300px', marginBotom: '1.45rem' }}>
+            <StaticImage    
+                src="../images/gatsby-icon.png"    
+                width={300}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt="A Gatsby icon"
+                style={{ marginBottom: '1.45rem' }}
+                />
+            </div>
+            <Link to="/">Home</Link>
         </Layout>
     )
 }
+
+export default Contact
+
+export const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                contact {
+                    name
+                    company
+                    address
+                }
+            }
+        }
+    }`

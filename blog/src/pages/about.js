@@ -13,9 +13,6 @@ const About = ({ data }) => {
             <h1>About Us</h1>
             <p>{'${company] was started by ${name} in 2022.'}</p>
             <p>{'At ${company} we just make blogs!'}</p>
-            <div>{company}</div>
-            <div>{'C/O ${name}'}</div>
-            <div>{address}</div>
             <div style={{ maxWidth: '300px', marginBotom: '1.45rem' }}>
             <StaticImage    
                 src="../images/gatsby-icon.png"    
@@ -43,6 +40,7 @@ export const query = graphql`
                 }
             }
         }
-    }`
+    }
+`
 
 
