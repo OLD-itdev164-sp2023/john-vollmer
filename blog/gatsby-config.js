@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        spaceId: 'onzfomnhozar',
-        accessToken: 'mhfy0e6SpJSkwCbfZCH4nTp8dTKNMCWQE5qym99q_bE'
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
       },
     },
     `gatsby-transformer-sharp`,
