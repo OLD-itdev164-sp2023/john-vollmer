@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Seo title="Home"/>
     <ul className={styles.list}>
       {
-        DataTransfer.allContentfulBlogPost.edges.map(edge => (
+        data.allContentfulBlogPost.edges.map(edge => (
           <li key={edge.node.id}>
             <Link to={edge.node.slug}>{edge.node.title}</Link>
             <div>
@@ -29,11 +29,6 @@ const IndexPage = () => (
   </Layout>
 )
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
