@@ -42,4 +42,4 @@ Header.defaultPages = {
   siteTitle: ``,
 }
 
-export default Header
+export { Header }
