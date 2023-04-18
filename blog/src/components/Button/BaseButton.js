@@ -8,7 +8,7 @@ const Reset = styled(Button)`
     box-shadow: none;
     font-weight: normal;
     border-radius: 0;
-    curser: pointer;
+    cursor: pointer;
 `
 
 export const BaseButton = ({ children, ...rest }) =>
