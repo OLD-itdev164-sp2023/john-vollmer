@@ -2,7 +2,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { Search } from 'styled-icons/feather'
 import { H1 } from "../Heading"
+import { IconButton } from '../Button'
 import { Section } from '../Section'
 
 const Outer = styled.header`
@@ -32,8 +34,8 @@ const Header = ({ siteTitle }) => (
         </StyledLink>
       </H1>
     </Section>
-    <Section width={11/12}>
-      Search
+    <Section width={1/12}>
+      <IconButton icon={<Search />} />
     </Section>
   </Outer>
 )
