@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
-import { Box, Card, Heading }
+import { Box, Card, Heading } from "rebass"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
